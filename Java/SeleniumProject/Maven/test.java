@@ -24,7 +24,7 @@ public class AppTest
  
 		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);  
 		driver.manage().window().maximize();  
-		System.out.println(driver.get(baseUrl));
+		System.out.println(driver.get("https://www.google.com/"));
 		driver.close();
 	}     
 }
