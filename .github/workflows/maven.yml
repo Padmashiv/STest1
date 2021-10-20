@@ -22,8 +22,8 @@ jobs:
     - name: Test with Maven
       run: mvn -B package --file pom.xml test
       
-    - name: Test with Java
-      run: --file AppTest.java
+    #- name: Test with Java
+     # run: --file AppTest.java
       
       
       
