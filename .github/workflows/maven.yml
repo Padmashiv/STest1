@@ -22,6 +22,11 @@ jobs:
     - name: Test with Maven
       run: mvn -B package --file pom.xml test
       
+    - name: Test with Java
+      run: mvn -B package --file AppTest.java
+      
+      
+      
     #steps:
 
     #- uses: actions/checkout@v2
