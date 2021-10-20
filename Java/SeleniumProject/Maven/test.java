@@ -23,9 +23,8 @@ public class AppTest
 		driver = new ChromeDriver(options);
  
 		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);  
-		
-		System.out.println(driver.get("https://www.google.com/"));
-		driver.manage().window().maximize();  
+		driver.manage().window().maximize();
+		System.out.println(driver.get(baseurl));  
 		driver.close();
 	}     
 }
