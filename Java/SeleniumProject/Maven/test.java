@@ -24,6 +24,8 @@ public class AppTest
 		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);  
 		System.out.println(driver.get(baseUrl));  
 		driver.manage().window().maximize();
+		System.out.println("****************" + "Current Url : " + "********************" );
+		System.out.println(driver.getCurrentUrl());
 		driver.close();
 	}     
 }
