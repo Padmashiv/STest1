@@ -23,7 +23,7 @@ jobs:
       run: mvn -B package --file pom.xml test
       
     - name: Test with Java
-      run: mvn -B package --file AppTest.java
+      run: mvn --file AppTest.java
       
       
       
