@@ -10,7 +10,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class AppTest 
 { 
 	public WebDriver driver; 
-	public String baseUrl = "https://www.lambdatest.com/";  
+	public String baseUrl = "https://www.google.com.com/";  
 	
 	@Test             
 	public void test1() {      
@@ -24,7 +24,7 @@ public class AppTest
  
 		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);  
 		driver.manage().window().maximize();  
-		driver.get(baseUrl);
+		System.out.println(driver.get(baseUrl));
 		driver.close();
 	}     
 }
