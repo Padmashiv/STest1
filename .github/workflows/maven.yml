@@ -18,7 +18,7 @@ jobs:
     - name: Set up JDK 1.8
       uses: actions/setup-java@v1
       # uses: stCarolas/setup-maven@7060d72b50fbf2389a16d6f66a9c7d4d9ece5d36
-    - uses: stCarolas/setup-maven@v4.2
+   # - uses: stCarolas/setup-maven@v4.2
       #Execute test
        # - name: Clean output folder
        # run: mvn clean
