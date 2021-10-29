@@ -33,9 +33,15 @@ jobs:
         chromedriver --url-base=/wd/hub &
         sudo Xvfb -ac :99 -screen 0 1280x1024x24 > /dev/null 2>&1 & # optional
 
+   
+    
+    - name:  Install Google Chrome 
+      run:   |
+              chmod +x ./scripts/InstallChrome.sh
+                          ./scripts/InstallChrome.sh 
     - name: Test with Maven
       run: mvn -B package --file pom.xml test
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v2      
     #- name: Test with Java
      # run: --file AppTest.java
       
